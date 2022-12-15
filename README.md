@@ -3,9 +3,9 @@
 ## Developers: :computer:
 - Ariane França
 - Denise Capitaneo
-- Everton Alves=
+- Everton Alves
 
-## Bem vinda Prof Taynara Dutra ao nosso site DH Flix ✨:movie_camera:! 
+## Bem vinda Prof Emerson Braga à nossa Automação do Site Spreecommerce✨! 
 
 ### Como acessar:
  - 📌 Instale as extensões Robot Framework Language Server e Robot Code;
