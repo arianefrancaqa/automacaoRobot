@@ -63,25 +63,17 @@ Selecionar produto
     Wait Until Element Is Visible       ${VESTIDO_FLORIDO}
     Click Element                       ${VESTIDO_FLORIDO}
 
-# Selecionar tamanho
-#     Click Element       ${ALTURA_MINI}
-#     Click Element       ${TAMANHO_XS}
-
 Adicionar ao carrinho
     Wait Until Element Is Visible       ${BOTAO_ADD_TO_CART}
-    Click Element       ${BOTAO_ADD_TO_CART}
+    Click Element                       ${BOTAO_ADD_TO_CART}
     Wait Until Element Is Visible       ${BOTAO_CHECKOUT}
-    Click Element       ${BOTAO_CHECKOUT}
+    Click Element                       ${BOTAO_CHECKOUT}
 
 Preencher dados de billing address e clicar em Save and Continue
-    Input Text                    ${CAMPO_NOME}           ${NOME}
-    Input Text                    ${CAMPO_SOBRENOME}      ${SOBRENOME}
-    Input Text                    ${CAMPO_ENDERECO}       ${ENDERECO}
-    Input Text                    ${CAMPO_CIDADE}         ${CIDADE}
-    # Wait Until Element Is Visible       ${CAMPO_ESTADO}         
-    # Click Element                       ${CAMPO_ESTADO}
-    #Wait Until Element Is Visible       ${OPCAO_ESTADO}    
-    #Click Element                       ${OPCAO_ESTADO}
+    Input Text                          ${CAMPO_NOME}           ${NOME}
+    Input Text                          ${CAMPO_SOBRENOME}      ${SOBRENOME}
+    Input Text                          ${CAMPO_ENDERECO}       ${ENDERECO}
+    Input Text                          ${CAMPO_CIDADE}         ${CIDADE}
     Input Text                          ${CAMPO_CEP}            ${CEP}
     Input Text                          ${CAMPO_TELEFONE}       ${TELEFONE}
     Wait Until Element Is Visible       ${BOTAO_SAVE_CONTINUE} 

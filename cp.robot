@@ -9,7 +9,6 @@ Processo de compra de uma peça feminina no site Spree Demo
     Fazer Login
     Ir para seção
     Selecionar produto
-    #Selecionar tamanho
     Adicionar ao carrinho 
     Preencher dados de billing address e clicar em Save and Continue
     Preencher dados do cartão de crédito, clicar em Save and Continue
