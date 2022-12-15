@@ -1,0 +1,20 @@
+1671077291805	geckodriver	INFO	Listening on 127.0.0.1:56080
+1671077294968	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56081" "-no-remote" "-profile" "C:\\Users\\arian\\AppData\\Local\\Temp\\rust_mozprofile2dK2oX"
+1671077296130	Marionette	INFO	Marionette enabled
+1671077296139	Marionette	INFO	Listening on port 56088
+WebDriver BiDi listening on ws://127.0.0.1:56081
+1671077296593	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\arian\\AppData\\Local\\Temp\\rust_mozprofile2dK2oX\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:56081/devtools/browser/d6c3ff46-8946-429e-bff4-faaa18469fa2
+JavaScript warning: https://pagead2.googlesyndication.com/bg/z7cUAtzL1u1d_2AGWF4wFgnTveRSMJLcB1xcawACHJQ.js line 2 > eval line 899 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://forum.robotframework.org."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://forum.robotframework.org."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://forum.robotframework.org."
+JavaScript error: , line 0: NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+JavaScript error: https://tpc.googlesyndication.com/sodar/5k7CCto5.html, line 11: uncaught exception: 7
+[2022-12-15T04:10:09Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2022-12-15T04:10:09Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2022-12-15T04:10:09Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+[2022-12-15T04:10:09Z ERROR mp4parse] Found 2 nul bytes in "\0\0"
+JavaScript warning: https://pagead2.googlesyndication.com/bg/z7cUAtzL1u1d_2AGWF4wFgnTveRSMJLcB1xcawACHJQ.js line 2 > eval line 1127 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/z7cUAtzL1u1d_2AGWF4wFgnTveRSMJLcB1xcawACHJQ.js line 2 > eval line 5904 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.

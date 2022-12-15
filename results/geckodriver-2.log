@@ -1,0 +1,12 @@
+1671073866923	geckodriver	INFO	Listening on 127.0.0.1:53805
+1671073870092	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53806" "-no-remote" "-profile" "C:\\Users\\arian\\AppData\\Local\\Temp\\rust_mozprofileRasKJq"
+1671073872607	Marionette	INFO	Marionette enabled
+1671073872625	Marionette	INFO	Listening on port 53819
+WebDriver BiDi listening on ws://127.0.0.1:53806
+1671073873186	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\arian\\AppData\\Local\\Temp\\rust_mozprofileRasKJq\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53806/devtools/browser/3aad34b0-3948-4639-8377-974bfdca1df5
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.spreecommerce.org."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.spreecommerce.org."
+1671073897270	Marionette	INFO	Stopped listening on port 53819
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.

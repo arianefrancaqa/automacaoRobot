@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.11.1 on win32)" generated="20221215 16:58:12.934" rpa="false" schemaversion="3">
+<suite id="s1" name="CheckPointTesting" source="C:\Users\arian\CheckPointTesting">
+<suite id="s1-s1" name="Cp" source="C:\Users\arian\CheckPointTesting\cp.robot">
+<test id="s1-s1-t1" name="Processo de compra de uma peça feminina no site Spree Demo" line="7">
+<kw name="Acessar a Loja" library="cp">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221215 16:58:13.452" level="INFO">Opening browser 'Chrome' to base url 'https://demo.spreecommerce.org/'.</msg>
+<status status="PASS" starttime="20221215 16:58:13.451" endtime="20221215 16:58:17.563"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221215 16:58:17.564" endtime="20221215 16:58:17.778"/>
+</kw>
+<status status="PASS" starttime="20221215 16:58:13.450" endtime="20221215 16:58:17.779"/>
+</kw>
+<kw name="Fazer Login" library="cp">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_USUARIO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221215 16:58:17.788" level="INFO">Clicking element 'id=account-button'.</msg>
+<status status="PASS" starttime="20221215 16:58:17.783" endtime="20221215 16:58:17.942"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${OPCAO_LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221215 16:58:17.944" level="INFO">Clicking element 'css=#link-to-account &gt; .dropdown-item:nth-child(1)'.</msg>
+<status status="PASS" starttime="20221215 16:58:17.943" endtime="20221215 16:58:18.045"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${CAMPO_EMAIL}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221215 16:58:18.046" endtime="20221215 16:58:18.638"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_EMAIL}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221215 16:58:18.642" level="INFO">Typing text 'test_checkpoint@mail.com' into text field 'id=spree_user_email'.</msg>
+<status status="PASS" starttime="20221215 16:58:18.639" endtime="20221215 16:58:18.989"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${CAMPO_SENHA}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20221215 16:58:18.990" endtime="20221215 16:58:19.107"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_SENHA}</arg>
+<arg>${SENHA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221215 16:58:19.111" level="INFO">Typing text 'teste123' into text field 'id=spree_user_password'.</msg>
+<status status="PASS" starttime="20221215 16:58:19.109" endtime="20221215 16:58:19.388"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221215 16:58:19.391" level="INFO">Clicking element 'css=input[class="btn btn-primary btn-block spree-btn mt-2"]'.</msg>
+<status status="PASS" starttime="20221215 16:58:19.388" endtime="20221215 16:58:20.782"/>
+</kw>
+<status status="PASS" starttime="20221215 16:58:17.781" endtime="20221215 16:58:20.782"/>
+</kw>
+<kw name="Ir para seção" library="cp">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_WOMAN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221215 16:58:20.790" level="INFO">Clicking element 'xpath=//a[contains(text(),'Women')]'.</msg>
+<status status="PASS" starttime="20221215 16:58:20.790" endtime="20221215 16:58:20.869"/>
+</kw>
+<status status="PASS" starttime="20221215 16:58:20.790" endtime="20221215 16:58:20.869"/>
+</kw>
+<kw name="Selecionar produto" library="cp">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${VESTIDO_FLORIDO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221215 16:58:20.877" endtime="20221215 16:58:22.387"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${VESTIDO_FLORIDO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221215 16:58:22.389" level="INFO">Clicking element 'xpath=//img[@alt='Floral Wrap Dress']'.</msg>
+<status status="PASS" starttime="20221215 16:58:22.389" endtime="20221215 16:58:22.557"/>
+</kw>
+<status status="PASS" starttime="20221215 16:58:20.869" endtime="20221215 16:58:22.557"/>
+</kw>
+<kw name="Adicionar ao carrinho" library="cp">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${BOTAO_ADD_TO_CART}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221215 16:58:22.565" endtime="20221215 16:58:22.991"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_ADD_TO_CART}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221215 16:58:23.004" level="INFO">Clicking element 'id=add-to-cart-button'.</msg>
+<status status="PASS" starttime="20221215 16:58:22.991" endtime="20221215 16:58:23.162"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${BOTAO_CHECKOUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221215 16:58:23.162" endtime="20221215 16:58:23.796"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_CHECKOUT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221215 16:58:23.804" level="INFO">Clicking element 'xpath=//a[contains(text(),'Checkout')]'.</msg>
+<status status="PASS" starttime="20221215 16:58:23.796" endtime="20221215 16:58:25.100"/>
+</kw>
+<status status="PASS" starttime="20221215 16:58:22.557" endtime="20221215 16:58:25.108"/>
+</kw>
+<kw name="Preencher dados de billing address e clicar em Save and Continue" library="cp">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_NOME}</arg>
+<arg>${NOME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221215 16:58:25.116" level="INFO">Typing text 'Teste' into text field 'id=order_bill_address_attributes_firstname'.</msg>
+<status status="PASS" starttime="20221215 16:58:25.108" endtime="20221215 16:58:25.284"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_SOBRENOME}</arg>
+<arg>${SOBRENOME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221215 16:58:25.284" level="INFO">Typing text 'Checkpoint' into text field 'id=order_bill_address_attributes_lastname'.</msg>
+<status status="PASS" starttime="20221215 16:58:25.284" endtime="20221215 16:58:25.420"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_ENDERECO}</arg>
+<arg>${ENDERECO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221215 16:58:25.420" level="INFO">Typing text '251 Park Avenue Sf' into text field 'id=order_bill_address_attributes_address1'.</msg>
+<status status="PASS" starttime="20221215 16:58:25.420" endtime="20221215 16:58:25.572"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_CIDADE}</arg>
+<arg>${CIDADE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221215 16:58:25.572" level="INFO">Typing text 'New York' into text field 'id=order_bill_address_attributes_city'.</msg>
+<status status="PASS" starttime="20221215 16:58:25.572" endtime="20221215 16:58:25.708"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_CEP}</arg>
+<arg>${CEP}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221215 16:58:25.716" level="INFO">Typing text '10022' into text field 'id=order_bill_address_attributes_zipcode'.</msg>
+<status status="PASS" starttime="20221215 16:58:25.716" endtime="20221215 16:58:25.852"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_TELEFONE}</arg>
+<arg>${TELEFONE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221215 16:58:25.852" level="INFO">Typing text '730-369-9466' into text field 'id=order_bill_address_attributes_phone'.</msg>
+<status status="PASS" starttime="20221215 16:58:25.852" endtime="20221215 16:58:25.988"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${BOTAO_SAVE_CONTINUE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221215 16:58:25.988" endtime="20221215 16:58:26.020"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_SAVE_CONTINUE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221215 16:58:26.020" level="INFO">Clicking element 'name=commit'.</msg>
+<status status="PASS" starttime="20221215 16:58:26.020" endtime="20221215 16:58:27.564"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${BOTAO_SAVE_CONTINUE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221215 16:58:27.572" endtime="20221215 16:58:27.625"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_SAVE_CONTINUE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221215 16:58:27.635" level="INFO">Clicking element 'name=commit'.</msg>
+<status status="PASS" starttime="20221215 16:58:27.625" endtime="20221215 16:58:29.008"/>
+</kw>
+<status status="PASS" starttime="20221215 16:58:25.108" endtime="20221215 16:58:29.008"/>
+</kw>
+<kw name="Preencher dados do cartão de crédito, clicar em Save and Continue" library="cp">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_NUM_CARTAO}</arg>
+<arg>${NUM_CARTAO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221215 16:58:29.016" level="INFO">Typing text '4109036068301957' into text field 'id=card_number'.</msg>
+<status status="PASS" starttime="20221215 16:58:29.016" endtime="20221215 16:58:29.315"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_DATA_EXPIRACAO}</arg>
+<arg>${DATA_EXPIRACAO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221215 16:58:29.323" level="INFO">Typing text '092028' into text field 'id=card_expiry'.</msg>
+<status status="PASS" starttime="20221215 16:58:29.315" endtime="20221215 16:58:29.631"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${CAMPO_CVV}</arg>
+<arg>${CVV}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221215 16:58:29.631" level="INFO">Typing text '237' into text field 'id=card_code'.</msg>
+<status status="PASS" starttime="20221215 16:58:29.631" endtime="20221215 16:58:29.751"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_SAVE_CONTINUE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221215 16:58:29.751" level="INFO">Clicking element 'name=commit'.</msg>
+<status status="PASS" starttime="20221215 16:58:29.751" endtime="20221215 16:58:31.691"/>
+</kw>
+<status status="PASS" starttime="20221215 16:58:29.008" endtime="20221215 16:58:31.691"/>
+</kw>
+<kw name="Checar informações e clicar em place order" library="cp">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BOTAO_PLACE_ORDER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221215 16:58:31.699" level="INFO">Clicking element 'xpath=//input[@name='commit']'.</msg>
+<status status="PASS" starttime="20221215 16:58:31.699" endtime="20221215 16:58:33.221"/>
+</kw>
+<status status="PASS" starttime="20221215 16:58:31.691" endtime="20221215 16:58:33.221"/>
+</kw>
+<kw name="Uma mensagem Bogus Gateway: Forced failure deve aparecer, encerrando o processo." library="cp">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Bogus Gateway: Forced failure</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221215 16:58:33.288" level="INFO">Current page contains text 'Bogus Gateway: Forced failure'.</msg>
+<status status="PASS" starttime="20221215 16:58:33.229" endtime="20221215 16:58:33.296"/>
+</kw>
+<status status="PASS" starttime="20221215 16:58:33.229" endtime="20221215 16:58:33.296"/>
+</kw>
+<status status="PASS" starttime="20221215 16:58:13.449" endtime="20221215 16:58:33.302"/>
+</test>
+<status status="PASS" starttime="20221215 16:58:12.990" endtime="20221215 16:58:33.309"/>
+</suite>
+<status status="PASS" starttime="20221215 16:58:12.944" endtime="20221215 16:58:33.317"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="CheckPointTesting">CheckPointTesting</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Cp">CheckPointTesting.Cp</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

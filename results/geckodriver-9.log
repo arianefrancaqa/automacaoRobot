@@ -1,0 +1,49 @@
+1671078399732	geckodriver	INFO	Listening on 127.0.0.1:57942
+1671078402874	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57943" "-no-remote" "-profile" "C:\\Users\\arian\\AppData\\Local\\Temp\\rust_mozprofiletM191N"
+1671078404536	Marionette	INFO	Marionette enabled
+1671078404544	Marionette	INFO	Listening on port 57949
+WebDriver BiDi listening on ws://127.0.0.1:57943
+1671078405061	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\arian\\AppData\\Local\\Temp\\rust_mozprofiletM191N\\search.json.mozlz4", (void 0)))
+[GFX1-]: DCompositionSurface::BeginDraw failed: 0x887a0005 Rect(x=524288, y=524800, w=1024, h=364)
+[GFX1-]: GFX: RenderThread detected a device reset in PostUpdate
+[GFX1-]: Handling webrender error 4
+[GFX1-]: Fallback WR to SW-WR + D3D11
+[GFX1-]: Failed to make render context current during destroying.
+[GFX1-]: [D3D11] create swap chain failed: 0x887a0005, 0
+[GFX1-]: Failed to initialize CompositorD3D11 for SWGL: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+[GFX1-]: [D3D11] create swap chain failed: 0x887a0005, 0
+[GFX1-]: Failed to initialize CompositorD3D11 for SWGL: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+out of memory: 0x0000000000100000 bytes requested
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Parent 37852, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+[GFX1-]: Failed to allocate Texture2D: Size(1024,512)
+DevTools listening on ws://127.0.0.1:57943/devtools/browser/ed31ee23-16f9-41c4-8a1f-0e47bae4a10c
+[GFX1]: Failed to map tile: 0x887a0005
+[GFX1-]: MapTile failed aValidRect: Rect(x=0, y=0, w=1024, h=512)
+[GFX1-]: Handling webrender error 3
+[GFX1-]: Fallback SW-WR + D3D11 to SW-WR
+[GFX1]: Failed to map tile: 0x887a0005
+[GFX1-]: MapTile failed aValidRect: Rect(x=0, y=0, w=260, h=512)
+[GFX1]: Failed to map tile: 0x887a0005
+[GFX1-]: MapTile failed aValidRect: Rect(x=0, y=0, w=1024, h=512)
+[GFX1]: Failed to map tile: 0x887a0005
+[GFX1-]: MapTile failed aValidRect: Rect(x=0, y=0, w=260, h=512)
+[GFX1]: Failed to map tile: 0x887a0005
+[GFX1-]: MapTile failed aValidRect: Rect(x=0, y=0, w=1024, h=364)
+[GFX1]: Failed to map tile: 0x887a0005
+[GFX1-]: MapTile failed aValidRect: Rect(x=0, y=0, w=260, h=364)
+[GFX1]: Failed to map tile: 0x887a0005
+[GFX1-]: MapTile failed aValidRect: Rect(x=85, y=0, w=227, h=44)
+[GFX1-]: MapTile failed aValidRect: Rect(x=139, y=16, w=104, h=12)
+[GFX1-]: GFX: D3D11 skip BeginFrame with device-removed.
+[GFX1-]: GFX: RenderThread detected a device reset in PostUpdate
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1671078411166	Marionette	INFO	Stopped listening on port 57949
+[Parent 37852, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+[Parent 37852, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+console.error: services.settings: 
+  main/query-stripping Signature failed  TypeError: NetworkError: Network request failed

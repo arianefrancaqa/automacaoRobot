@@ -1,0 +1,64 @@
+1671078421256	geckodriver	INFO	Listening on 127.0.0.1:57993
+1671078424383	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57994" "-no-remote" "-profile" "C:\\Users\\arian\\AppData\\Local\\Temp\\rust_mozprofilecAU06k"
+1671078425403	Marionette	INFO	Marionette enabled
+1671078425412	Marionette	INFO	Listening on port 58005
+WebDriver BiDi listening on ws://127.0.0.1:57994
+1671078425654	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Failed to link shader program: brush_opacity
+error X8000: D3D11 Internal Compiler Error: Invalid Bytecode: Failed to parse shader using reference shader parser: 0x8007000e
+
+Warning: D3D shader compilation failed with default flags. (ps_5_0)
+ Retrying with skip validation
+error X8000: D3D11 Internal Compiler Error: Invalid Bytecode: Failed to parse shader using reference shader parser: 0x8007000e
+
+Warning: D3D shader compilation failed with skip validation flags. (ps_5_0)
+ Retrying with skip optimization
+error X8000: D3D11 Internal Compiler Error: Invalid Bytecode: Failed to parse shader using reference shader parser: 0x8007000e
+
+Warning: D3D shader compilation failed with skip optimization flags. (ps_5_0)
+
+Failed to create D3D Shaders
+
+[2022-12-15T04:27:07Z ERROR webrender::device::gl] Failed to link shader program: brush_opacity
+    error X8000: D3D11 Internal Compiler Error: Invalid Bytecode: Failed to parse shader using reference shader parser: 0x8007000e
+    
+    Warning: D3D shader compilation failed with default flags. (ps_5_0)
+     Retrying with skip validation
+    error X8000: D3D11 Internal Compiler Error: Invalid Bytecode: Failed to parse shader using reference shader parser: 0x8007000e
+    
+    Warning: D3D shader compilation failed with skip validation flags. (ps_5_0)
+     Retrying with skip optimization
+    error X8000: D3D11 Internal Compiler Error: Invalid Bytecode: Failed to parse shader using reference shader parser: 0x8007000e
+    
+    Warning: D3D shader compilation failed with skip optimization flags. (ps_5_0)
+    
+    Failed to create D3D Shaders
+    
+[GFX1-]: wr_renderer_render: Shader(Link("brush_opacity", "error X8000: D3D11 Internal Compiler Error: Invalid Bytecode: Failed to parse shader using reference shader parser: 0x8007000e\n\nWarning: D3D shader compilation failed with default flags. (ps_5_0)\n Retrying with skip validation\nerror X8000: D3D11 Internal Compiler Error: Invalid Bytecode: Failed to parse shader using reference shader parser: 0x8007000e\n\nWarning: D3D shader compilation failed with skip validation flags. (ps_5_0)\n Retrying with skip optimization\nerror X8000: D3D11 Internal Compiler Error: Invalid Bytecode: Failed to parse shader using reference shader parser: 0x8007000e\n\nWarning: D3D shader compilation failed with skip optimization flags. (ps_5_0)\n\nFailed to create D3D Shaders\n"))
+[GFX1-]: GFX: RenderThread detected a device reset in PostUpdate
+JavaScript error: chrome://browser/content/browser.js, line 3981: Error: Failed to load resource://gre/modules/SearchService.sys.mjs
+[GFX1-]: Handling webrender error 2
+[GFX1-]: Fallback WR to SW-WR + D3D11
+[GFX1-]: Failed to make render context current during destroying.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\arian\\AppData\\Local\\Temp\\rust_mozprofilecAU06k\\search.json.mozlz4", (void 0)))
+[GFX1-]: [D3D11] create swap chain failed: 0x887a0005, 0
+[GFX1-]: Failed to initialize CompositorD3D11 for SWGL: FEATURE_FAILURE_D3D11_SWAP_CHAIN
+JavaScript error: chrome://browser/content/browser.js, line 3981: NS_ERROR_OUT_OF_MEMORY
+out of memory: 0x0000000000000080 bytes requested
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+[GFX1-]: wr_renderer_render: OutOfMemory
+1671078429643	Marionette	INFO	Stopped listening on port 58005
+1671078429651	CDP	WARN	Failed to remove undefined (Could not parse path (undefined): NS_ERROR_FILE_UNRECOGNIZED_PATH)
+[GFX1-]: Handling webrender error 2
+[GFX1-]: Fallback SW-WR + D3D11 to SW-WR
+[Parent 12968, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+[Parent 12968, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 717: Error: Phase "quit-application-granted" is finished, it is too late to register completion condition "ContentParent: id=21608b11900"
+JavaScript error: chrome://global/content/elements/browser-custom-element.js, line 628: TypeError: this.browsingContext is null
+console.warn: SearchService: "#init: abandoning init due to shutting down"
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: resource://gre/modules/SearchService.sys.mjs, line 362: NS_ERROR_ABORT: SearchService initialization failed
+JavaScript error: , line 0: uncaught exception: 2147500036
+JavaScript error: , line 0: uncaught exception: 2147500036

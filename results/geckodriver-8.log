@@ -1,0 +1,10 @@
+1671078326048	geckodriver	INFO	Listening on 127.0.0.1:57803
+1671078329168	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57804" "-no-remote" "-profile" "C:\\Users\\arian\\AppData\\Local\\Temp\\rust_mozprofileW2RJwT"
+1671078330439	Marionette	INFO	Marionette enabled
+1671078330450	Marionette	INFO	Listening on port 57810
+WebDriver BiDi listening on ws://127.0.0.1:57804
+1671078330817	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\arian\\AppData\\Local\\Temp\\rust_mozprofileW2RJwT\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57804/devtools/browser/6d92f13f-4868-4c6d-a061-b9404596168e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.spreecommerce.org."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.spreecommerce.org."
