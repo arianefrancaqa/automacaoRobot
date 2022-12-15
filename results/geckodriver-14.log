@@ -8,3 +8,5 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 DevTools listening on ws://127.0.0.1:60941/devtools/browser/68bd67c9-d8ed-40a4-9135-0c178aa91a47
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.spreecommerce.org."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demo.spreecommerce.org."
+1671135437394	Marionette	INFO	Stopped listening on port 60948
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.

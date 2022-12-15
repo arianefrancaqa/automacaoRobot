@@ -39,6 +39,7 @@ ${DATA_EXPIRACAO}           092028
 ${CAMPO_CVV}                id=card_code
 ${CVV}                      237
 ${BOTAO_PLACE_ORDER}        xpath=//input[@name='commit']
+${BOTAO_CHECK}              css=.radio:nth-child(2) .spree-radio-label-custom-input
 
 
 *** Keywords ***
@@ -70,12 +71,6 @@ Adicionar ao carrinho
     Click Element                       ${BOTAO_CHECKOUT}
 
 Preencher dados de billing address e clicar em Save and Continue
-    Input Text                          ${CAMPO_NOME}           ${NOME}
-    Input Text                          ${CAMPO_SOBRENOME}      ${SOBRENOME}
-    Input Text                          ${CAMPO_ENDERECO}       ${ENDERECO}
-    Input Text                          ${CAMPO_CIDADE}         ${CIDADE}
-    Input Text                          ${CAMPO_CEP}            ${CEP}
-    Input Text                          ${CAMPO_TELEFONE}       ${TELEFONE}
     Wait Until Element Is Visible       ${BOTAO_SAVE_CONTINUE} 
     Click Element                       ${BOTAO_SAVE_CONTINUE}
     Wait Until Element Is Visible       ${BOTAO_SAVE_CONTINUE} 
@@ -87,8 +82,18 @@ Preencher dados do cartão de crédito, clicar em Save and Continue
     Input Text          ${CAMPO_CVV}                ${CVV}
     Click Element       ${BOTAO_SAVE_CONTINUE}
 
+Selecionar a opção Check
+    Wait Until Element Is Visible       ${BOTAO_CHECK} 
+    Click Element                       ${BOTAO_CHECK}
+
 Checar informações e clicar em place order
     Click Element       ${BOTAO_PLACE_ORDER}
 
 Uma mensagem Bogus Gateway: Forced failure deve aparecer, encerrando o processo.
     Page Should Contain      Bogus Gateway: Forced failure
+    Close Browser
+
+Uma mensagem Sucesso deve ser exibida
+    Page Should Contain      Order placed successfully
+    Page Should Contain      Your order information will be sent to your email
+    Close Browser
